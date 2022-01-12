@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1090.0" prefWidth="1493.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeReportController">
+   <children>
+      <Label layoutX="85.0" layoutY="100.0" prefHeight="84.0" prefWidth="509.0" text="Income Report" textFill="WHITE">
+         <font>
+            <Font name="Montserrat SemiBold" size="60.0" />
+         </font>
+      </Label>
+      <Separator layoutX="578.0" layoutY="146.0" prefHeight="14.0" prefWidth="745.0" />
+      <AnchorPane layoutX="154.0" layoutY="248.0" prefHeight="642.0" prefWidth="540.0" style="-fx-background-color: #2b2b2d; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="140.0" layoutY="50.0" prefHeight="58.0" prefWidth="260.0" text="Monthly Report" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="158.0" prefHeight="26.0" prefWidth="128.0" text="Month     : " textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="189.0" layoutY="156.0" />
+            <JFXButton layoutX="402.0" layoutY="154.0" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #8c8c8c;" text="View">
+               <font>
+                  <Font name="Montserrat Black" size="18.0" />
+               </font>
+            </JFXButton>
+            <LineChart layoutX="26.0" layoutY="223.0" prefHeight="327.0" prefWidth="489.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <JFXButton layoutX="294.0" layoutY="569.0" prefHeight="49.0" prefWidth="217.0" style="-fx-background-color: #8c8c8c;" text="Print Report">
+               <font>
+                  <Font name="Montserrat Black" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="747.0" layoutY="248.0" prefHeight="642.0" prefWidth="540.0" style="-fx-background-color: #2b2b2d; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="140.0" layoutY="58.0" prefHeight="58.0" prefWidth="260.0" text="Annual Report" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="156.0" prefHeight="26.0" prefWidth="128.0" text="Year       : " textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="177.0" layoutY="154.0" />
+            <JFXButton layoutX="390.0" layoutY="152.0" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #8c8c8c;" text="View">
+               <font>
+                  <Font name="Montserrat Black" size="18.0" />
+               </font>
+            </JFXButton>
+            <LineChart layoutX="14.0" layoutY="215.0" prefHeight="327.0" prefWidth="496.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+            </LineChart>
+            <JFXButton layoutX="282.0" layoutY="567.0" prefHeight="49.0" prefWidth="217.0" style="-fx-background-color: #8c8c8c;" text="Print Report">
+               <font>
+                  <Font name="Montserrat Black" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="confermContext" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConfermationFormController">
+   <children>
+      <ImageView fitHeight="149.0" fitWidth="304.0" layoutX="148.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="43.0" layoutY="209.0" prefHeight="41.0" prefWidth="417.0" text="Do you want to sign out?" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Medium" size="29.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="205.0" layoutY="279.0" onAction="#openLogin" prefHeight="43.0" prefWidth="151.0" style="-fx-background-color: #094978;" text="Yes" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="377.0" layoutY="279.0" onAction="#cancelOnAction" prefHeight="43.0" prefWidth="151.0" style="-fx-background-color: #094978;" text="No" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Black" size="27.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

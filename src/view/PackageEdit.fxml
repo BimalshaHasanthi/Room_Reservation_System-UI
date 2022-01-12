@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1090.0" prefWidth="1493.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PackageEditController">
+   <children>
+      <Label layoutX="75.0" layoutY="90.0" text="Packages" textFill="WHITE">
+         <font>
+            <Font name="Montserrat SemiBold" size="60.0" />
+         </font>
+      </Label>
+      <Separator layoutX="431.0" layoutY="136.0" prefHeight="14.0" prefWidth="882.0" />
+      <AnchorPane layoutX="101.0" layoutY="236.0" prefHeight="687.0" prefWidth="557.0" style="-fx-background-color: #2b2b2d; -fx-background-radius: 25;">
+         <children>
+            <ImageView fitHeight="212.0" fitWidth="366.0" layoutX="111.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/room.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="136.0" layoutY="39.0" text="Vacation Package" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="97.0" layoutY="394.0" prefHeight="21.0" prefWidth="140.0" text="Package Code     :" textFill="#d3d3d4">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="284.0" layoutY="389.0" />
+            <JFXButton layoutX="338.0" layoutY="554.0" prefHeight="43.0" prefWidth="129.0" style="-fx-background-color: #8c8c8c;" text="Update">
+               <font>
+                  <Font name="Montserrat Black" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="99.0" layoutY="442.0" prefHeight="21.0" prefWidth="161.0" text="Package Details   :" textFill="#d3d3d4">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="282.0" layoutY="437.0" />
+            <Label layoutX="101.0" layoutY="492.0" prefHeight="21.0" prefWidth="161.0" text="Package price   :" textFill="#d3d3d4">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="284.0" layoutY="487.0" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="693.0" layoutY="236.0" prefHeight="687.0" prefWidth="557.0" style="-fx-background-color: #2b2b2d; -fx-background-radius: 25;">
+         <children>
+            <ImageView fitHeight="212.0" fitWidth="366.0" layoutX="103.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/addguest.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="173.0" layoutY="38.0" text="Special Offers" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="29.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="229.0" layoutY="525.0" prefHeight="48.0" prefWidth="101.0" text="Edit" />
+            <Label layoutX="116.0" layoutY="391.0" prefHeight="21.0" prefWidth="140.0" text="Offer Code     :" textFill="#d3d3d4">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="303.0" layoutY="386.0" />
+            <JFXButton layoutX="357.0" layoutY="551.0" prefHeight="43.0" prefWidth="129.0" style="-fx-background-color: #8c8c8c;" text="Update">
+               <font>
+                  <Font name="Montserrat Black" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="118.0" layoutY="439.0" prefHeight="21.0" prefWidth="161.0" text="Offer Details   :" textFill="#d3d3d4">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="301.0" layoutY="434.0" />
+            <Label layoutX="120.0" layoutY="489.0" prefHeight="21.0" prefWidth="161.0" text="Offer price   :" textFill="#d3d3d4">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="303.0" layoutY="484.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

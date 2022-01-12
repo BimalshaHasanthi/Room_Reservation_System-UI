@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1090.0" prefWidth="1493.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GuestDetailController">
+   <children>
+      <Label layoutX="80.0" layoutY="78.0" prefHeight="74.0" prefWidth="470.0" text="Search Details" textFill="WHITE">
+         <font>
+            <Font name="Montserrat SemiBold" size="60.0" />
+         </font>
+      </Label>
+      <Separator layoutX="554.0" layoutY="120.0" prefHeight="13.0" prefWidth="766.0" />
+      <AnchorPane layoutX="149.0" layoutY="207.0" prefHeight="284.0" prefWidth="555.0" style="-fx-background-color: #2b2b2d; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="165.0" layoutY="48.0" text="Search Guest" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="29.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="212.0" layoutY="272.0" prefHeight="48.0" prefWidth="101.0" text="Edit" />
+            <Label layoutX="39.0" layoutY="124.0" prefHeight="21.0" prefWidth="254.0" text="Guest's NIC/Passport No       : " textFill="#d3d3d4">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="303.0" layoutY="119.0" />
+            <JFXButton layoutX="361.0" layoutY="181.0" prefHeight="43.0" prefWidth="129.0" style="-fx-background-color: #8c8c8c;" text="Search">
+               <font>
+                  <Font name="Montserrat Black" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="226.0" layoutY="241.0" prefHeight="43.0" prefWidth="264.0" style="-fx-background-color: #8c8c8c;" text="View All Guest Details">
+               <font>
+                  <Font name="Montserrat Black" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="739.0" layoutY="207.0" prefHeight="284.0" prefWidth="555.0" style="-fx-background-color: #2b2b2d; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="165.0" layoutY="48.0" text="Search Room" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="29.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="212.0" layoutY="272.0" prefHeight="48.0" prefWidth="101.0" text="Edit" />
+            <Label layoutX="110.0" layoutY="124.0" prefHeight="21.0" prefWidth="140.0" text="Room ID       : " textFill="#d3d3d4">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="270.0" layoutY="119.0" />
+            <JFXButton layoutX="328.0" layoutY="181.0" prefHeight="43.0" prefWidth="129.0" style="-fx-background-color: #8c8c8c;" text="Search">
+               <font>
+                  <Font name="Montserrat Black" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="196.0" layoutY="239.0" prefHeight="43.0" prefWidth="264.0" style="-fx-background-color: #8c8c8c;" text="View All Room Details">
+               <font>
+                  <Font name="Montserrat Black" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="149.0" layoutY="569.0" prefHeight="284.0" prefWidth="555.0" style="-fx-background-color: #2b2b2d; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="165.0" layoutY="48.0" text="Search Meal" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="29.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="212.0" layoutY="272.0" prefHeight="48.0" prefWidth="101.0" text="Edit" />
+            <Label layoutX="99.0" layoutY="124.0" prefHeight="21.0" prefWidth="172.0" text="Meal Code       : " textFill="#d3d3d4">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="265.0" layoutY="119.0" />
+            <JFXButton layoutX="323.0" layoutY="186.0" prefHeight="43.0" prefWidth="129.0" style="-fx-background-color: #8c8c8c;" text="Search">
+               <font>
+                  <Font name="Montserrat Black" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="191.0" layoutY="241.0" prefHeight="43.0" prefWidth="264.0" style="-fx-background-color: #8c8c8c;" text="View All Meal Details">
+               <font>
+                  <Font name="Montserrat Black" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

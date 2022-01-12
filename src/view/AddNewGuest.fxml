@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1090.0" prefWidth="1493.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewGuestController">
+   <children>
+      <Label layoutX="50.0" layoutY="42.0" prefHeight="74.0" prefWidth="530.0" text="Add New Guest" textFill="WHITE">
+         <font>
+            <Font name="Montserrat SemiBold" size="60.0" />
+         </font>
+      </Label>
+      <Separator layoutX="600.0" layoutY="86.0" prefHeight="12.0" prefWidth="786.0" />
+      <JFXTextField fx:id="txtFName" focusColor="WHITE" labelFloat="true" layoutX="53.0" layoutY="225.0" prefHeight="48.0" prefWidth="259.0" promptText="First Name" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtLName" labelFloat="true" layoutX="53.0" layoutY="341.0" prefHeight="48.0" prefWidth="259.0" promptText="Last Name" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtNIC" labelFloat="true" layoutX="47.0" layoutY="459.0" prefHeight="48.0" prefWidth="259.0" promptText="NIC / Passport Number" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="53.0" layoutY="578.0" prefHeight="48.0" prefWidth="259.0" promptText="Address" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtGender" labelFloat="true" layoutX="378.0" layoutY="341.0" prefHeight="48.0" prefWidth="259.0" promptText="Gender" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtMail" labelFloat="true" layoutX="378.0" layoutY="578.0" prefHeight="48.0" prefWidth="259.0" promptText="Email" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtNum" labelFloat="true" layoutX="381.0" layoutY="459.0" prefHeight="48.0" prefWidth="259.0" promptText="Contact Number" style="-fx-background-color: white;" />
+      <TextField fx:id="txtCheckIn" layoutX="863.0" layoutY="238.0" />
+      <Label layoutX="781.0" layoutY="243.0" text="Check In" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtCheckOut" layoutX="863.0" layoutY="298.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="779.0" layoutY="303.0" text="Check Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtNoOfAdults" layoutX="883.0" layoutY="357.0" prefHeight="31.0" prefWidth="91.0" />
+      <Label layoutX="782.0" layoutY="362.0" text="No Of Adults" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtNoOfChild" layoutX="913.0" layoutY="417.0" prefHeight="12.0" prefWidth="87.0" />
+      <Label layoutX="782.0" layoutY="475.0" text="Room No" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtRoomNo" layoutX="885.0" layoutY="470.0" prefHeight="12.0" prefWidth="87.0" />
+      <Label layoutX="783.0" layoutY="422.0" text="No Of Childrens" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="1031.0" layoutY="362.0" text="Bed" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <JFXTextField fx:id="txtCountry" labelFloat="true" layoutX="381.0" layoutY="225.0" prefHeight="48.0" prefWidth="259.0" promptText="Country" style="-fx-background-color: white;" />
+      <Label layoutX="1028.0" layoutY="418.0" text="Meal" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Button layoutX="794.0" layoutY="554.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="48.0" prefWidth="134.0" style="-fx-background-color: #8c8c8c;" text="Save">
+         <font>
+            <Font name="Montserrat Black" size="20.0" />
+         </font></Button>
+      <TextField fx:id="txtMeal" layoutX="1091.0" layoutY="413.0" prefHeight="12.0" prefWidth="87.0" />
+      <TextField fx:id="txtBed" layoutX="1087.0" layoutY="357.0" prefHeight="12.0" prefWidth="87.0" />
+      <TableView fx:id="tblGuestDetails" editable="true" layoutX="53.0" layoutY="701.0" prefHeight="200.0" prefWidth="1232.0">
+        <columns>
+          <TableColumn fx:id="colFName" prefWidth="75.0" text="FName" />
+          <TableColumn fx:id="colLName" prefWidth="75.0" text="LName" />
+            <TableColumn fx:id="colNIC" prefWidth="75.0" text="NIC" />
+            <TableColumn fx:id="colAddress" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="colCountry" prefWidth="75.0" text="Country" />
+            <TableColumn fx:id="colGender" prefWidth="75.0" text="Gender" />
+            <TableColumn fx:id="colTP" prefWidth="75.0" text="TP" />
+            <TableColumn fx:id="colMail" prefWidth="75.0" text="Mail" />
+            <TableColumn fx:id="colCheckIn" prefWidth="75.0" text="Check In" />
+            <TableColumn fx:id="colCheckOut" prefWidth="103.0" text="Check Out" />
+            <TableColumn fx:id="colAdult" prefWidth="84.0" text="Adults" />
+            <TableColumn fx:id="colChild" prefWidth="78.0" text="Child" />
+            <TableColumn fx:id="colBed" prefWidth="78.0" text="Bed" />
+            <TableColumn fx:id="colMeal" text="Meal" />
+            <TableColumn fx:id="colRoom" prefWidth="60.0" text="Room" />
+            <TableColumn fx:id="colEdit" prefWidth="71.0" text="Edit" />
+        </columns>
+      </TableView>
+      <Button layoutX="940.0" layoutY="554.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="48.0" prefWidth="243.0" style="-fx-background-color: #8c8c8c;" text="Send Mail">
+         <font>
+            <Font name="Montserrat Black" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="942.0" layoutY="614.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="48.0" prefWidth="243.0" style="-fx-background-color: #8c8c8c;" text="Print Token">
+         <font>
+            <Font name="Montserrat Black" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

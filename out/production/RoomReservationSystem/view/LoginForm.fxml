@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginContext" prefHeight="1070.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="1091.0" fitWidth="1920.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+         <image>
+            <Image url="@../assets/1.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane blendMode="SRC_ATOP" layoutX="806.0" layoutY="111.0" prefHeight="653.0" prefWidth="451.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="133.0" layoutY="306.0" onAction="#nextOnAction" prefHeight="45.0" prefWidth="263.0" promptText="User Name" unFocusColor="#515155">
+               <font>
+                  <Font name="Montserrat Bold" size="20.0" />
+               </font></JFXTextField>
+            <ImageView fitHeight="59.0" fitWidth="66.0" layoutX="60.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/ic_user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="49.0" layoutX="67.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/ic_key.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="password" labelFloat="true" layoutX="133.0" layoutY="385.0" onAction="#loginOnAction" prefHeight="45.0" prefWidth="263.0" promptText="Password" unFocusColor="#515155">
+               <font>
+                  <Font name="Montserrat Bold" size="20.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="150.0" layoutY="504.0" onAction="#openView" prefHeight="59.0" prefWidth="152.0" ripplerFill="BLACK" style="-fx-background-color: #0071e3; -fx-background-radius: 25;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView blendMode="MULTIPLY" fitHeight="160.0" fitWidth="397.0" layoutX="43.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logoBlue.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

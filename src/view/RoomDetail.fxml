@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1090.0" prefWidth="1499.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomDetailController">
+   <children>
+      <Label layoutX="70.0" layoutY="62.0" prefHeight="70.0" prefWidth="440.0" text="Room Details" textFill="WHITE">
+         <font>
+            <Font name="Montserrat SemiBold" size="60.0" />
+         </font>
+      </Label>
+      <Separator layoutX="533.0" layoutY="106.0" prefHeight="12.0" prefWidth="873.0" />
+      <TableView layoutX="146.0" layoutY="249.0" prefHeight="235.0" prefWidth="1182.0">
+        <columns>
+          <TableColumn prefWidth="445.9999694824219" text="Available Rooms" />
+          <TableColumn minWidth="0.0" prefWidth="334.0" text="Rooms In Maintaince" />
+            <TableColumn minWidth="8.0" prefWidth="398.0" text="Booked Rooms" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="139.0" layoutY="562.0" prefHeight="320.0" prefWidth="746.0" style="-fx-background-color: #2b2b2d; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="165.0" layoutY="48.0" text="Search Room Avalability" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="29.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="212.0" layoutY="272.0" prefHeight="48.0" prefWidth="101.0" text="Edit" />
+            <Label layoutX="102.0" layoutY="150.0" prefHeight="21.0" prefWidth="140.0" text="Room ID       : " textFill="#d3d3d4">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="262.0" layoutY="145.0" />
+            <JFXButton layoutX="515.0" layoutY="139.0" prefHeight="43.0" prefWidth="129.0" style="-fx-background-color: #8c8c8c;" text="Search">
+               <font>
+                  <Font name="Montserrat Black" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

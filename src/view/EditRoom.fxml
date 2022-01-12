@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1090.0" prefWidth="1493.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditRoomController">
+   <children>
+      <Label layoutX="70.0" layoutY="68.0" prefHeight="74.0" prefWidth="356.0" text="Edit Room" textFill="WHITE">
+         <font>
+            <Font name="Montserrat SemiBold" size="60.0" />
+         </font>
+      </Label>
+      <Separator layoutX="439.0" layoutY="110.0" prefHeight="13.0" prefWidth="871.0" />
+      <AnchorPane layoutX="83.0" layoutY="225.0" prefHeight="355.0" prefWidth="379.0" style="-fx-background-color: #2b2b2d; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="80.0" layoutY="32.0" prefHeight="43.0" prefWidth="220.0" text="Add New Room" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="120.0" prefHeight="21.0" prefWidth="113.0" text="Room ID       : " textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="148.0" layoutY="115.0" />
+            <Label layoutX="31.0" layoutY="167.0" prefHeight="21.0" prefWidth="102.0" text="Room Type  : " textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="148.0" layoutY="162.0" />
+            <Label layoutX="31.0" layoutY="218.0" prefHeight="21.0" prefWidth="113.0" text="Room View  : " textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="148.0" layoutY="213.0" />
+            <JFXButton layoutX="242.0" layoutY="279.0" prefHeight="43.0" prefWidth="92.0" style="-fx-background-color: #8c8c8c;" text="Add">
+               <font>
+                  <Font name="Montserrat Black" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="506.0" layoutY="225.0" prefHeight="355.0" prefWidth="379.0" style="-fx-background-color: #2b2b2d; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="80.0" layoutY="27.0" prefHeight="43.0" prefWidth="220.0" text="Modify Room" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="118.0" prefHeight="21.0" prefWidth="113.0" text="Room ID       : " textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="145.0" layoutY="113.0" />
+            <Label layoutX="28.0" layoutY="165.0" prefHeight="21.0" prefWidth="102.0" text="Room Type  : " textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="145.0" layoutY="160.0" />
+            <Label layoutX="28.0" layoutY="216.0" prefHeight="21.0" prefWidth="113.0" text="Room View  : " textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="145.0" layoutY="211.0" />
+            <JFXButton layoutX="255.0" layoutY="278.0" prefHeight="43.0" prefWidth="92.0" style="-fx-background-color: #8c8c8c;" text="Modify">
+               <font>
+                  <Font name="Montserrat Black" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="931.0" layoutY="225.0" prefHeight="355.0" prefWidth="379.0" style="-fx-background-color: #2b2b2d; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="119.0" layoutY="25.0" prefHeight="43.0" prefWidth="220.0" text="Delete Room" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="118.0" prefHeight="21.0" prefWidth="113.0" text="Room ID       : " textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="155.0" layoutY="113.0" />
+            <JFXButton layoutX="253.0" layoutY="193.0" prefHeight="43.0" prefWidth="92.0" style="-fx-background-color: #8c8c8c;" text="Delete">
+               <font>
+                  <Font name="Montserrat Black" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <TableView layoutX="83.0" layoutY="642.0" prefHeight="224.0" prefWidth="805.0">
+        <columns>
+          <TableColumn prefWidth="169.0" text="Room ID" />
+          <TableColumn minWidth="0.0" prefWidth="269.0" text="Room Type" />
+            <TableColumn prefWidth="416.0" text="Room View" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
